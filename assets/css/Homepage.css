@@ -1,0 +1,570 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'inter', sans-serif;
+}
+
+.hero-btn {
+  background: #b52b2b;
+  color: #fff;
+  padding: 10px 45px;
+  border: none;
+  font-size: 14px;
+}
+
+.hero-btn:hover {
+  background: #8B0000;
+}
+
+/* Top Bar */
+.top-bar {
+  background: #8B0000;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 6px 0;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.custom-navbar {
+  background: #f4f4f4;
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #8B0000 !important;
+}
+
+.nav-link {
+  color: #333 !important;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 13px;
+}
+
+.nav-right .icon {
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  height: 75vh;
+  background: url('../../Images/hero.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 550px;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-family: 'Vetrino', serif;
+  font-size: 52px;
+  line-height: 1.2;
+  color: #FFA6A6;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span{
+  font-size: 52px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+
+.section {
+  padding: 40px 0px 30px;
+}
+
+/* new arrivals */
+.arrival-text h2 {
+  font-family: 'Vetrino', serif;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.arrival-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.product-card {
+  margin-bottom: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h5 {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Offer Section */
+.offer-section {
+  padding: 60px 0px 50px;
+  background: #f3f3f3;
+}
+
+.offer-banner {
+  background: url('../../Images/offer.png') center/cover no-repeat;
+  border-radius: 12px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.offer-overlay {
+  color: #fff;
+}
+
+.offer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.offer-badge {
+  font-family: 'inter', serif;
+  background: #b52b2b;
+  padding: 0px 20px;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.offer-content h2 {
+  font-family: 'Vetrino', serif;
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.offer-text {
+  margin-top: 10px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.btn-outline-custom {
+   background: #b52b2b;
+  color: #fff;
+  padding: 10px 45px;
+  border: none;
+  font-size: 14px;
+}
+
+.btn-outline-custom:hover {
+ background: #8B0000;
+ color: #fff;
+}
+
+.feature-section {
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+.feature-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.feature-content {
+  text-align: left;
+}
+
+.feature-content .top-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.feature-content h3 {
+  font-family: 'Vetrino', serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.feature-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.feature-img img {
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.feature-img:hover img {
+  transform: scale(1.03);
+}
+
+.gift-section {
+  padding: 60px 0;
+  background: #f3f3f3;
+}
+
+.gift-link {
+  display: block;
+}
+
+.gift-img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gift-img:hover {
+  transform: scale(1.01);
+}
+
+.natural-section {
+  padding: 60px 0;
+  background: #ffffff;
+}
+
+.natural-img img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.natural-content {
+  padding-left: 30px;
+}
+
+.natural-content h2 {
+  font-family: 'Vetrino', serif;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.natural-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.services-section {
+  padding: 30px 0;
+  background: #f3f3f3;
+}
+
+.service-item {
+  padding: 20px;
+}
+
+.service-item img {
+  width: 50px;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.service-item h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.logo-footer{
+  width: 190px;
+  
+}
+
+.service-item {
+  transition: 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.footer-section {
+  background: #640000;
+  color: #fff;
+  padding: 60px 0 20px;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-section h5 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.footer-section p {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.subscribe-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 10px;
+  color: #ffffff !important;
+  border: solid 1px #ffffff;
+  background: none
+}
+
+.subscribe-box button {
+  padding: 10px 15px;
+  border: none;
+  background: #fff;
+  color: #000;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin-top: 30px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-bottom .left a {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.footer-bottom .right {
+  font-size: 12px;
+}
+
+/* ================= MOBILE (≤768px) ================= */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar-nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    margin: 5px 0;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  /* Hero */
+  .hero {
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  /* New Arrivals */
+  .arrival-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .arrival-text h2 {
+    font-size: 28px;
+  }
+
+  /* Offer */
+  .offer-banner {
+    height: 200px;
+  }
+
+  .offer-badge {
+    font-size: 24px;
+  }
+
+  .offer-content h2 {
+    font-size: 28px;
+  }
+
+  .offer-text {
+    font-size: 14px;
+  }
+
+  /* Feature Section */
+  .feature-content {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Gift */
+  .gift-section {
+    padding: 30px 0;
+  }
+
+  /* Natural */
+  .natural-content {
+    padding-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .natural-content h2 {
+    font-size: 26px;
+  }
+
+  /* Services */
+  .service-item {
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  .footer-section .row > div {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+  }
+
+  .subscribe-box input {
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+
+/* ================= TABLET (768px–1024px) ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  /* Hero */
+  .hero {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  /* New Arrivals */
+  .arrival-text h2 {
+    font-size: 32px;
+  }
+
+  /* Offer */
+  .offer-banner {
+    height: 250px;
+  }
+
+  /* Natural */
+  .natural-content h2 {
+    font-size: 32px;
+  }
+
+  /* Footer */
+  .footer-section .row > div {
+    margin-bottom: 20px;
+  }
+}
